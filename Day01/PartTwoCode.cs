@@ -13,15 +13,15 @@ public class PartTwoCode
     {
         Dictionary<string, string> replaceDigits = new Dictionary<string, string>() 
         {
-            { "one", "1" },
-            { "two", "2" },
-            { "three", "3" },
-            { "four", "4" },
-            { "five", "5" },
-            { "six", "6" },
-            { "seven", "7" },
-            { "eight", "8" },
-            { "nine", "9" },
+            { "one", "o1e" },
+            { "two", "t2o" },
+            { "three", "t3e" },
+            { "four", "f4r" },
+            { "five", "f5e" },
+            { "six", "s6x" },
+            { "seven", "s7n" },
+            { "eight", "e8t" },
+            { "nine", "n9e" },
         };
 
         var codes = new StreamReader(@"E:\Dev\2023AdventOfCode\Day01\part_2_input.txt").ReadToEnd().Split('\n').ToList();
@@ -32,9 +32,6 @@ public class PartTwoCode
             var digitsOnly = replaceDigits.Keys
                 .Aggregate(code, (prod, next) => prod.Replace(next, replaceDigits[next]))
                 .Where(c => Char.IsDigit(c));
-
-            Console.WriteLine($"{code}");
-            Console.WriteLine($"{digitsOnly.First()}{digitsOnly.Last()}");
 
             sum += int.Parse($"{digitsOnly.First()}{digitsOnly.Last()}");
         }
