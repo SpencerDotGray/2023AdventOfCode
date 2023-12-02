@@ -30,8 +30,6 @@ public class DayTwoPartOneCode
             var ID = int.Parse(info[0].Replace("Game", ""));
             var rounds = info[1].Split(";");
 
-            //Console.WriteLine($"Processing Game ID: {ID}");
-
             var passedRound = true;
 
             foreach (var round in rounds)
