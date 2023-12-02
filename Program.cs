@@ -1,7 +1,10 @@
 ﻿
 using _2023AdventOfCode.Day01;
+using _2023AdventOfCode.Day02;
 
-PartOneCode p1  = new PartOneCode();
-PartTwoCode p2 = new PartTwoCode();
+DayOnePartOneCode p1  = new DayOnePartOneCode();
+DayOnePartTwoCode p2 = new DayOnePartTwoCode();
+DayTwoPartOneCode d2p1 = new DayTwoPartOneCode();
+DayTwoPartTwoCode d2p2 = new DayTwoPartTwoCode();
 
-p2.Main();
+d2p2.Main("C:\\Users\\Spencer\\OneDrive - Grove City College\\Documents\\dev\\2023AdventOfCode\\Day02\\part_1_input.txt");

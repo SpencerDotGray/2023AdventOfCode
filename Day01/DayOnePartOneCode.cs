@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace _2023AdventOfCode.Day01;
 
-public class PartOneCode
+public class DayOnePartOneCode
 {
     public void Main()
     {
