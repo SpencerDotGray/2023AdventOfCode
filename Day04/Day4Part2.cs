@@ -47,15 +47,10 @@ public class Day4Part2
         {
             var card = cards.Where(c => c.ID == id).FirstOrDefault();
 
-            for (int i = 0; i < card.Count; i++)
-            {
-                int numNewCards = card.SelectedNumbers.Where(number => card.WinningNumbers.Contains(number)).Count();
+            int numNewCards = card.SelectedNumbers.Where(number => card.WinningNumbers.Contains(number)).Count();
 
-                for (int j = id + 1; j <= id + numNewCards; j++)
-                    cards.Where(card => card.ID == j).First().AddCopy();
-            }
+            for (int j = id + 1; j <= id + numNewCards; j++)
+                cards.Where(card => card.ID == j).First().Count += card.Count;
         }
-
-        public void AddCopy() => Count++;
     }
 }
