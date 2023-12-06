@@ -3,6 +3,7 @@ using _2023AdventOfCode.Day01;
 using _2023AdventOfCode.Day02;
 using _2023AdventOfCode.Day03;
 using _2023AdventOfCode.Day04;
+using _2023AdventOfCode.Day05;
 
 DayOnePartOneCode p1  = new DayOnePartOneCode();
 DayOnePartTwoCode p2 = new DayOnePartTwoCode();
@@ -12,8 +13,10 @@ Day3PartOneCode d3p1 = new Day3PartOneCode();
 Day3Part2Code d3p2 = new Day3Part2Code();
 Day4Part1 d4p1 = new();
 Day4Part2 d4p2 = new();
+Day5Part1 d5p1 = new();
+Day5Part2 d5p2 = new();
 
-//var path = "E:\\Dev\\2023AdventOfCode\\Day04\\test_input.txt";
-var path = "E:\\Dev\\2023AdventOfCode\\Day04\\input.txt";
+var path = "E:\\Dev\\2023AdventOfCode\\Day05\\test_input.txt";
+path = "E:\\Dev\\2023AdventOfCode\\Day05\\input.txt";
 
-d4p2.Main(path);
+d5p2.Main(path);
